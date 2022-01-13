@@ -20,10 +20,10 @@ const context = {
 server.get('*', (req, res) => {
   const app = new Vue({
     data() {
-			return {
-				url: req.url
-			}
-		},
+      return {
+        url: req.url
+      }
+    },
     template: `<div>URL {{ url }}</div>`
   })
 
@@ -39,5 +39,5 @@ server.get('*', (req, res) => {
 })
 
 server.listen(8080, () => {
-	console.log('listen at: http://localhost:8080')
+  console.log('listen at: http://localhost:8080')
 })
