@@ -11,6 +11,8 @@ module.exports = {
   rules: {
     'no-unused-vars': 'off',
     'no-undef': 'off',
-    indent: ['warn', 2]
+    indent: ['warn', 2],
+    'comma-dangle': ['warn', 'never'],
+    semi: ['warn', 'never']
   }
 }
